@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+    
+    <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script 
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+  // Our code will go here
+  function App(props) {
+    return (
+        <div>
+          <header>
+            <h1>Sally Student's Resume</h1>
+          </header>
+          <main>
+            <section className="education">
+              <h2>Education</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quam facilis repudiandae voluptatibus, officia dolorum illum ab voluptatem! Rerum a delectus cum totam eaque ipsum ullam officiis, pariatur sint quae.</p>
+            </section>
+            <section className="employment">
+              <h2>Employment History</h2>
+
+              <div className="work-record">
+                <h4>Job</h4>
+                <p>job title</p>
+                <p>dates of employment</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo voluptatum repellat, modi, maxime fuga quibusdam accusantium dolor excepturi velit quia nam nulla eveniet? Laudantium dolorem odio ratione, iste non vitae!</p>
+              </div>
+
+              <div className="work-record">
+                <h4>Job</h4>
+                <p>job title</p>
+                <p>dates of employment</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo voluptatum repellat, modi, maxime fuga quibusdam accusantium dolor excepturi velit quia nam nulla eveniet? Laudantium dolorem odio ratione, iste non vitae!</p>
+              </div>
+            </section>
+          </main>
+        </div>
+    )
+}
+
+ReactDOM.render(
+  <App  />,
+  document.querySelector('#application-root')
+);
+</script>
+</body>
+</html>
